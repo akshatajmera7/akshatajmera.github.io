@@ -1,0 +1,9 @@
+.cursor{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #4a24e2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4a24e2;
+}

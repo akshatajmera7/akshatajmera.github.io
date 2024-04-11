@@ -1,0 +1,54 @@
+*{
+    font-family: cursive;
+}
+.dash{
+    color: #f0f0e5;
+    border: 5px solid #f0f0e5;
+    box-sizing:border-box;
+    background-color: #17191a;
+    float: right;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-family: cursive;
+    margin-right: 20px;
+    margin-top: 22.5px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    border: 5px solid #17191a;
+}
+.dashboard{
+    font-size: 1.5rem;   
+    background-color: #f0f0e5;
+    color: #17191a;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+.dashnames{
+    font-size: 1.5em;
+}
+.home{
+    color: #f0f0e5;
+    &:hover{
+        color: #d9f24f;
+    }
+}
+/* .experience{color: #f0f0e5;
+    &:hover{
+    color: #d9f24f;
+}}
+.about{color: #f0f0e5;&:hover{
+    color: #d9f24f;
+}}
+.contact{color: #f0f0e5;&:hover{
+    color: #d9f24f;
+}}
+.projects{color: #f0f0e5;&:hover{
+    color: #d9f24f;
+}} */
