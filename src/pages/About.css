@@ -82,6 +82,13 @@
     background-color: #17191a;
     overflow: hidden;
 }
+.text-wrapper2{
+    display: flex;
+    justify-content: center;
+    background-color: #17191a;
+    overflow: hidden;
+    margin-top: 1300px;
+}
 h1{
     font-size: 7rem;
     text-transform: uppercase;
@@ -104,7 +111,9 @@ h1{
     font-size: 5rem;
     color: #e2e2cc;
     margin-bottom: 40px;
-    
+}
+.projects{
+    margin-bottom: 50px;
 }
 .project1{
     text-align: right;
@@ -113,52 +122,60 @@ h1{
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
 } 
  .project2{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 500px;
     display: flex;
     flex-direction: column;
     width: 400px;
     height: fit-content;
     position: relative;
+    margin-top: 250px; 
+
 } 
 .project3{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 700px;
     display: flex;
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
+    margin-top: 550px;
+
 }
 .project4{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 900px;
     display: flex;
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
+    margin-top: 850px;
 }
 .project5{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 700px;
     display: flex;
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
+    margin-top: 1150px;
 }
 .project6{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 500px;
     display: flex;
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
+    margin-top: 1450px;
+
 }
 .project7{
     text-align: right;
@@ -167,16 +184,23 @@ h1{
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
+    margin-top: 1750px;
 } 
 .projecttop{
     text-transform: uppercase;
     background-color: #17191a;
     color: #d9f24f;
+    height: 45px;
     margin-top: 0;
     &:hover{
         background-color: #4a24e2;
     }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 .p1{
     width: 400px;
