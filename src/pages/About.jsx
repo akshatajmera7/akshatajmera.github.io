@@ -15,62 +15,11 @@ export const About = () => {
   const [show4, setShow4] = useState(true);
   const [show5, setShow5] = useState(true);
   const [show6, setShow6] = useState(true);
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-  const [cursorVariant, setCursorVariant] = useState("default");
-  console.log(mousePosition);
-  useEffect(() => {
-    console.log("use effect");
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", mouseMove);
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      transition: {
-        delay: 0,
-      },
-    },
-    text: {
-      height: 100,
-      width: 100,
-      x: mousePosition.x - 50,
-      y: mousePosition.y - 50,
-    },
-  };
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+
   return (
     <div className="brief">
-      <motion.div
-        className="cursor"
-        variants={variants}
-        animate={cursorVariant}
-      >
-        <div className="b1"></div>
-        <div className="b2"></div>
-      </motion.div>
-      <div
-        onMouseEnter={textEnter}
-        onMouseLeave={textLeave}
-        className="portfolio"
-      >
-        Portfolio
-      </div>
-      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="name">
-        Akshat Ajmera
-      </div>
+      <div className="portfolio">Portfolio</div>
+      <div className="name">Akshat Ajmera</div>
       <div className="box">
         <div className="starbit">
           <div className="bit">A Bit About Me</div>
@@ -79,7 +28,7 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="intro">
+      <div className="intro">
         I am an under-graduate student at the BITS Pilani Hyderabad. I am
         currently persuing my B.E. Computer Science degree. I'm 18 year old
         enthusiast who wants to learn new skills . Eager to embrace new skills
@@ -97,20 +46,17 @@ export const About = () => {
           and I can't wait to see where the lines of code will take me!
         </p>
       </div>
-      <div
-        onMouseEnter={textEnter}
-        onMouseLeave={textLeave}
-        className="text-wrapper"
-      >
+      <div className="hexcontainer">
+        <div className="hexagon"></div>
+      </div>
+      <div className="text-wrapper">
         <h1>Akshat Ajmera</h1>
         <h1>Akshat Ajmera</h1>
         <h1>Akshat Ajmera</h1>
         <h1>Akshat Ajmera</h1>
       </div>
       <div className="projects">
-        <div className="pro" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-          Some of my Projects:
-        </div>
+        <div className="pro">Some of my Projects:</div>
         <motion.div
           className="current"
           variants={fadeInAimation}
@@ -118,104 +64,67 @@ export const About = () => {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project1"
-          >
-            <button onClick={() => setShow(!show)}>
-              {" "}
-              <div className="projecttop">
+          <div className="container">
+            <div className="project1">
+              <button onClick={() => setShow(!show)} className="projecttop">
                 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project1
-              </div>
-            </button>
-            {show && (
-              <button>
-                <div className="p1">project 1</div>
+                project 1
               </button>
-            )}
+              {show && <button className="p1">project 1</button>}
+            </div>
+            <br />
+            <div className="project2">
+              <button className="projecttop" onClick={() => setShow1(!show1)}>
+                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                project2
+              </button>
+              {show1 && <button className="p2">project 2</button>}
+            </div>
+            <br />
+            <div className="project3">
+              <button className="projecttop" onClick={() => setShow2(!show2)}>
+                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                project3
+              </button>
+              {show2 && <button className="p3">project 3</button>}
+            </div>
+            <br />
+            <div className="project4">
+              <button className="projecttop" onClick={() => setShow3(!show3)}>
+                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                project4
+              </button>
+              {show3 && <button className="p4">project 4</button>}
+            </div>
+            <br />
+            <div className="project5">
+              <button className="projecttop" onClick={() => setShow4(!show4)}>
+                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                project5
+              </button>
+              {show4 && <button className="p5">project 5</button>}
+            </div>
+            <br />
+            <div className="project6">
+              <button className="projecttop" onClick={() => setShow5(!show5)}>
+                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                project6
+              </button>
+              {show5 && <button className="p6">project 6</button>}
+            </div>
+            <br />
+            <div className="project7">
+              <button className="projecttop" onClick={() => setShow6(!show6)}>
+                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                project7
+              </button>
+              {show6 && <button className="p7">project 7</button>}
+            </div>
+            <br />
           </div>
-          <br />
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project2"
-          >
-            <button className="projecttop" onClick={() => setShow1(!show1)}>
-              -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              project2
-            </button>
-            {show1 && <button className="p2">project 2</button>}
-          </div>
-          <br />
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project3"
-          >
-            <button className="projecttop" onClick={() => setShow2(!show2)}>
-              -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              project3
-            </button>
-            {show2 && <button className="p3">project 3</button>}
-          </div>
-          <br />
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project4"
-          >
-            <button className="projecttop" onClick={() => setShow3(!show3)}>
-              -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              project4
-            </button>
-            {show3 && <button className="p4">project 4</button>}
-          </div>
-          <br />
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project5"
-          >
-            <button className="projecttop" onClick={() => setShow4(!show4)}>
-              -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              project5
-            </button>
-            {show4 && <button className="p5">project 5</button>}
-          </div>
-          <br />
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project6"
-          >
-            <button className="projecttop" onClick={() => setShow5(!show5)}>
-              -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              project6
-            </button>
-            {show5 && <button className="p6">project 6</button>}
-          </div>
-          <br />
-          <div
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-            className="project7"
-          >
-            <button className="projecttop" onClick={() => setShow6(!show6)}>
-              -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              project7
-            </button>
-            {show6 && <button className="p7">project 7</button>}
-          </div>
-          <br />
         </motion.div>
       </div>
-      <div
-        onMouseEnter={textEnter}
-        onMouseLeave={textLeave}
-        className="text-wrapper"
-      >
+      <div className="text-wrapper2">
         <h1>Akshat Ajmera</h1>
         <h1>Akshat Ajmera</h1>
         <h1>Akshat Ajmera</h1>

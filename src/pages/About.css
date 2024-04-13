@@ -6,7 +6,7 @@
 .portfolio{
     margin-left: 41%;
     color: #4a24e2;
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: cursive;
     position: sticky;
     &:hover{
@@ -24,7 +24,8 @@
     display: flex;
     margin-left: 15vw;
     margin-top: 3vw;
-    font-size: 4.5rem;
+    font-size: 10rem;
+    margin-top: 150px;
 }
 .intro{
     color: #e2e2cc;
@@ -32,6 +33,24 @@
     margin-left: 20vw;
     margin-right: 15vw;
     margin-top: 30px;
+}
+.hexagon{
+    height: 0;
+    width: 150px;
+    border-top: 150px solid #4a24e2;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+
+}
+.hexagon::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 150px;
+    border-bottom: 150px solid #4a24e2;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    
 }
 .bit{
     box-sizing:border-box ;
@@ -82,6 +101,13 @@
     background-color: #17191a;
     overflow: hidden;
 }
+.text-wrapper2{
+    display: flex;
+    justify-content: center;
+    background-color: #17191a;
+    overflow: hidden;
+    margin-top: 1300px;
+}
 h1{
     font-size: 7rem;
     text-transform: uppercase;
@@ -104,7 +130,9 @@ h1{
     font-size: 5rem;
     color: #e2e2cc;
     margin-bottom: 40px;
-    
+}
+.projects{
+    margin-bottom: 50px;
 }
 .project1{
     text-align: right;
@@ -113,70 +141,85 @@ h1{
     flex-direction: column;
     width: 400px;
     height: fit-content;
-    position: relative;
+    position: absolute;
 } 
-/* .project2{
-    background-color:#4a24e2;
-    color: #17191a;
-    position: relative;
+ .project2{
     text-align: right;
-    margin-left: 600px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
     width: 400px;
-    height: 400px;
-/* } */
-/* .project3{
-    background-color:#d9f24f;
-    color: #17191a;
-    text-align: right;
-    margin-left: 900px;
-    width: 400px;
-    height: 400px;
+    height: fit-content;
     position: relative;
+    margin-top: 250px; 
+
+} 
+.project3{
+    text-align: right;
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    margin-top: 550px;
+
 }
 .project4{
-    background-color:#e2e2cc;
-    color: #17191a;
-    text-align: right;
-    margin-left: 1200px;
-    width: 400px;
-    height: 400px;
-    position: relative;
-}
-.project5{
-    background-color:#4a24e2;
-    color: #17191a;
     text-align: right;
     margin-left: 900px;
+    display: flex;
+    flex-direction: column;
     width: 400px;
-    height: 400px;
-    position: relative;
+    height: fit-content;
+    position: absolute;
+    margin-top: 850px;
+}
+.project5{
+    text-align: right;
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    margin-top: 1150px;
 }
 .project6{
-    background-color:#d9f24f;
-    color: #17191a;
     text-align: right;
-    margin-left: 600px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
     width: 400px;
-    height: 400px;
-    position: relative;
+    height: fit-content;
+    position: absolute;
+    margin-top: 1450px;
+
 }
 .project7{
-    background-color:#e2e2cc;
-    color: #17191a;
     text-align: right;
     margin-left: 300px;
+    display: flex;
+    flex-direction: column;
     width: 400px;
-    height: 400px;
-    position: relative;
-} */ */
+    height: fit-content;
+    position: absolute;
+    margin-top: 1750px;
+} 
 .projecttop{
     text-transform: uppercase;
     background-color: #17191a;
     color: #d9f24f;
+    height: 45px;
     margin-top: 0;
     &:hover{
         background-color: #4a24e2;
     }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 .p1{
     width: 400px;
@@ -185,6 +228,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color:#e2e2cc;
 }
 .p2{
     width: 400px;
@@ -193,6 +237,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color: #4a24e2;
 }
 .p3{
     width: 400px;
@@ -201,6 +246,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color: #d9f24f;
 }
 .p4{
     width: 400px;
@@ -209,6 +255,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color: #e2e2cc;
 }
 .p5{
     width: 400px;
@@ -217,6 +264,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color: #4a24e2;
 }
 .p6{
     width: 400px;
@@ -225,6 +273,7 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color: #d9f24f;
 }
 .p7{
     width: 400px;
@@ -233,16 +282,6 @@ h1{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    background-color: #e2e2cc;
 }
-.cursor{
-    background-color:#4f26e9;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: transform 1ms;
-    pointer-events: none;
-    mix-blend-mode: difference;
-}
+
