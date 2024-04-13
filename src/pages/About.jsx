@@ -46,6 +46,9 @@ export const About = () => {
           and I can't wait to see where the lines of code will take me!
         </p>
       </div>
+      <div className="hexcontainer">
+        <div className="hexagon"></div>
+      </div>
       <div className="text-wrapper">
         <h1>Akshat Ajmera</h1>
         <h1>Akshat Ajmera</h1>

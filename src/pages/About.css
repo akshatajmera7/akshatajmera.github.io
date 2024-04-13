@@ -6,7 +6,7 @@
 .portfolio{
     margin-left: 41%;
     color: #4a24e2;
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: cursive;
     position: sticky;
     &:hover{
@@ -24,7 +24,8 @@
     display: flex;
     margin-left: 15vw;
     margin-top: 3vw;
-    font-size: 4.5rem;
+    font-size: 10rem;
+    margin-top: 150px;
 }
 .intro{
     color: #e2e2cc;
@@ -32,6 +33,24 @@
     margin-left: 20vw;
     margin-right: 15vw;
     margin-top: 30px;
+}
+.hexagon{
+    height: 0;
+    width: 150px;
+    border-top: 150px solid #4a24e2;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+
+}
+.hexagon::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 150px;
+    border-bottom: 150px solid #4a24e2;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    
 }
 .bit{
     box-sizing:border-box ;
