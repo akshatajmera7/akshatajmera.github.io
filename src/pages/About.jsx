@@ -15,11 +15,32 @@ export const About = () => {
   const [show4, setShow4] = useState(true);
   const [show5, setShow5] = useState(true);
   const [show6, setShow6] = useState(true);
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", (e) => {
+    cursor.setAttribute(
+      "style",
+      "top: " + (e.pageY - 30) + "px; left: " + (e.pageX - 30) + "px;"
+    );
+  });
+  document.addEventListener("click", () => {
+    cursor.classList.add("expand");
+    setTimeout(() => {
+      cursor.classList.remove("expand");
+    }, 500);
+  });
 
   return (
     <div className="brief">
+      <div className="cursor"></div>
       <div className="portfolio">Portfolio</div>
-      <div className="name">Akshat Ajmera</div>
+      <div className="con">
+        <div className="name">Akshat Ajmera</div>
+        <div className="college">CSE UnderGrad at BITS PILANI</div>
+        <div className="fcube">
+          <img src="images/4cube.png" alt="" />
+        </div>
+      </div>
+
       <div className="box">
         <div className="starbit">
           <div className="bit">A Bit About Me</div>
