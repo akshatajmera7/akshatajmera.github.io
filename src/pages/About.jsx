@@ -16,10 +16,11 @@ export const About = () => {
   const [show5, setShow5] = useState(true);
   const [show6, setShow6] = useState(true);
   const cursor = document.querySelector(".cursor");
+
   document.addEventListener("mousemove", (e) => {
     cursor.setAttribute(
       "style",
-      "top: " + (e.pageY - 30) + "px; left: " + (e.pageX - 30) + "px;"
+      "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 20) + "px;"
     );
   });
   document.addEventListener("click", () => {
@@ -30,126 +31,126 @@ export const About = () => {
   });
 
   return (
-    <div className="brief">
-      <div className="cursor"></div>
-      <div className="portfolio">Portfolio</div>
-      <div className="con">
-        <div className="name">Akshat Ajmera</div>
-        <div className="college">CSE UnderGrad at BITS PILANI</div>
-        <div className="fcube">
-          <img src="images/4cube.png" alt="" />
+    <div className="all">
+      <div className="brief">
+        <div className="cursor"></div>
+        <div className="portfolio">Portfolio</div>
+        <div className="con">
+          <div className="name">Akshat Ajmera</div>
+          <div className="college">CSE UnderGrad at BITS PILANI</div>
         </div>
-      </div>
 
-      <div className="box">
-        <div className="starbit">
-          <div className="bit">A Bit About Me</div>
-          <div className="star">
-            <img src="images/star1.png" class="starImage" alt="Star" />
+        <div className="box">
+          <div className="starbit">
+            <div className="bit">A Bit About Me</div>
+            <div className="star">
+              <img src="images/star1.png" class="starImage" alt="Star" />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="intro">
-        I am an under-graduate student at the BITS Pilani Hyderabad. I am
-        currently persuing my B.E. Computer Science degree. I'm 18 year old
-        enthusiast who wants to learn new skills . Eager to embrace new skills
-        and experiences, I possess a vibrant curiosity that drives me to explore
-        various facets of life. With a mindset geared towards continuous
-        improvement, I approach challenges as opportunities for growth and are
-        unafraid to step out of their comfort zone.Life's a playground, and I'm
-        here to explore and learn as much as I can. Let's see where this journey
-        takes me!
-        <p>
-          Just stepping into the coding world, I'm a newbie excited about the
-          endless possibilities ahead. Embracing the learning curve, I'm
-          determined to grow gradually, turning each challenge into an
-          opportunity to enhance my coding skills. It's a journey of discovery,
-          and I can't wait to see where the lines of code will take me!
-        </p>
-      </div>
-      <div className="hexcontainer">
-        <div className="hexagon"></div>
-      </div>
-      <div className="text-wrapper">
-        <h1>Akshat Ajmera</h1>
-        <h1>Akshat Ajmera</h1>
-        <h1>Akshat Ajmera</h1>
-        <h1>Akshat Ajmera</h1>
-      </div>
-      <div className="projects">
-        <div className="pro">Some of my Projects:</div>
-        <motion.div
-          className="current"
-          variants={fadeInAimation}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
-          <div className="container">
-            <div className="project1">
-              <button onClick={() => setShow(!show)} className="projecttop">
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project 1
-              </button>
-              {show && <button className="p1">project 1</button>}
+        <div className="intro">
+          I am an under-graduate student at the BITS Pilani Hyderabad. I am
+          currently persuing my B.E. Computer Science degree. I'm 18 year old
+          enthusiast who wants to learn new skills . Eager to embrace new skills
+          and experiences, I possess a vibrant curiosity that drives me to
+          explore various facets of life. With a mindset geared towards
+          continuous improvement, I approach challenges as opportunities for
+          growth and are unafraid to step out of their comfort zone.Life's a
+          playground, and I'm here to explore and learn as much as I can. Let's
+          see where this journey takes me!
+          <p>
+            Just stepping into the coding world, I'm a newbie excited about the
+            endless possibilities ahead. Embracing the learning curve, I'm
+            determined to grow gradually, turning each challenge into an
+            opportunity to enhance my coding skills. It's a journey of
+            discovery, and I can't wait to see where the lines of code will take
+            me!
+          </p>
+        </div>
+        {/* <div className="hexcontainer">
+          <div className="hexagon"></div>
+        </div> */}
+        <div className="text-wrapper">
+          <h1>Akshat Ajmera</h1>
+          <h1>Akshat Ajmera</h1>
+          <h1>Akshat Ajmera</h1>
+          <h1>Akshat Ajmera</h1>
+        </div>
+        <div className="projects">
+          <div className="pro">Some of my Projects:</div>
+          <motion.div
+            className="current"
+            variants={fadeInAimation}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <div className="container">
+              <div className="project1">
+                <button onClick={() => setShow(!show)} className="projecttop">
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project 1
+                </button>
+                {show && <button className="p1">project 1</button>}
+              </div>
+              <br />
+              <div className="project2">
+                <button className="projecttop" onClick={() => setShow1(!show1)}>
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project2
+                </button>
+                {show1 && <button className="p2">project 2</button>}
+              </div>
+              <br />
+              <div className="project3">
+                <button className="projecttop" onClick={() => setShow2(!show2)}>
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project3
+                </button>
+                {show2 && <button className="p3">project 3</button>}
+              </div>
+              <br />
+              <div className="project4">
+                <button className="projecttop" onClick={() => setShow3(!show3)}>
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project4
+                </button>
+                {show3 && <button className="p4">project 4</button>}
+              </div>
+              <br />
+              <div className="project5">
+                <button className="projecttop" onClick={() => setShow4(!show4)}>
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project5
+                </button>
+                {show4 && <button className="p5">project 5</button>}
+              </div>
+              <br />
+              <div className="project6">
+                <button className="projecttop" onClick={() => setShow5(!show5)}>
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project6
+                </button>
+                {show5 && <button className="p6">project 6</button>}
+              </div>
+              <br />
+              <div className="project7">
+                <button className="projecttop" onClick={() => setShow6(!show6)}>
+                  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  project7
+                </button>
+                {show6 && <button className="p7">project 7</button>}
+              </div>
+              <br />
             </div>
-            <br />
-            <div className="project2">
-              <button className="projecttop" onClick={() => setShow1(!show1)}>
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project2
-              </button>
-              {show1 && <button className="p2">project 2</button>}
-            </div>
-            <br />
-            <div className="project3">
-              <button className="projecttop" onClick={() => setShow2(!show2)}>
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project3
-              </button>
-              {show2 && <button className="p3">project 3</button>}
-            </div>
-            <br />
-            <div className="project4">
-              <button className="projecttop" onClick={() => setShow3(!show3)}>
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project4
-              </button>
-              {show3 && <button className="p4">project 4</button>}
-            </div>
-            <br />
-            <div className="project5">
-              <button className="projecttop" onClick={() => setShow4(!show4)}>
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project5
-              </button>
-              {show4 && <button className="p5">project 5</button>}
-            </div>
-            <br />
-            <div className="project6">
-              <button className="projecttop" onClick={() => setShow5(!show5)}>
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project6
-              </button>
-              {show5 && <button className="p6">project 6</button>}
-            </div>
-            <br />
-            <div className="project7">
-              <button className="projecttop" onClick={() => setShow6(!show6)}>
-                -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                project7
-              </button>
-              {show6 && <button className="p7">project 7</button>}
-            </div>
-            <br />
-          </div>
-        </motion.div>
-      </div>
-      <div className="text-wrapper2">
-        <h1>Akshat Ajmera</h1>
-        <h1>Akshat Ajmera</h1>
-        <h1>Akshat Ajmera</h1>
-        <h1>Akshat Ajmera</h1>
+          </motion.div>
+        </div>
+        <div className="text-wrapper2">
+          <h1>Akshat Ajmera</h1>
+          <h1>Akshat Ajmera</h1>
+          <h1>Akshat Ajmera</h1>
+          <h1>Akshat Ajmera</h1>
+        </div>
       </div>
     </div>
   );

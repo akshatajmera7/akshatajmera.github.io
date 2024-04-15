@@ -1,5 +1,10 @@
-*{cursor:default;
-font-family:Helvetica, Arial,  sans-serif;}
+*{cursor: default;
+font-family:Helvetica, Arial,  sans-serif;
+}
+.all{
+    width: 100%;
+    background-color: #17191a;
+}
 .brief{
     background-color: #17191a;
     padding: 20px;
@@ -12,28 +17,31 @@ font-family:Helvetica, Arial,  sans-serif;}
     text-transform: uppercase;
     padding-left: 12vw;
     padding-top: 5vw;
+    
 }
 .con{
+    width: 84.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4vw;
+    margin-top: 10vw;
+    margin-bottom: 30vh;
 }
 .cursor{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 10px solid #4a24e2;
     border-radius: 50%;
     position: absolute;
-    transition-duration: 200ms;
+    transition-duration: 500ms;
     transition-timing-function: ease-out;
     animation: cursorAnim .5s infinite alternate;
 }
 .cursor::after{
     content: "";
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     border: 20px solid #4a24e2;
     border-radius: 50%;
@@ -63,14 +71,14 @@ font-family:Helvetica, Arial,  sans-serif;}
 }
 .expand{
     animation: cursorAnim3 .5s forwards;
-    border: 20px solid red;
+    border: 20px solid #e2e2cc;
 }
 @keyframes cursorAnim3{
     0%{
         transform: scale(1);
     }
     50%{
-        transform: scale(3);
+        transform: scale(1.5);
     }
     100%{
         transform: scale(1);
@@ -84,11 +92,6 @@ font-family:Helvetica, Arial,  sans-serif;}
     margin-top: 0.5vw;
     padding-left: 12vw;
     text-transform: uppercase;
-}
-.fcube{
-    float: left;
-    position: relative;
-    z-index: 0;
 }
 .portfolio{
     margin-left: 45%;
@@ -114,7 +117,7 @@ font-family:Helvetica, Arial,  sans-serif;}
     margin-right: 15vw;
     margin-top: 30px;
 }
-.hexagon{
+/* .hexagon{
     height: 0;
     width: 150px;
     border-top: 150px solid #4a24e2;
@@ -131,7 +134,7 @@ font-family:Helvetica, Arial,  sans-serif;}
     border-right: 100px solid transparent;
     border-left: 100px solid transparent;
     
-}
+} */
 .bit{
     box-sizing:border-box ;
     width: fit-content;
@@ -144,6 +147,7 @@ font-family:Helvetica, Arial,  sans-serif;}
     z-index: -1;
     font-size: 5rem;;
 }
+
 .starbit{
     display: flex;
     margin-left: 15vw;
@@ -189,11 +193,11 @@ font-family:Helvetica, Arial,  sans-serif;}
     margin-top: 1300px;
 }
 h1{
-    font-size: 7rem;
+    font-size: 10rem;
     text-transform: uppercase;
     white-space: nowrap;
-    padding: 0 3rem;
-    letter-spacing: 2px;
+    padding: 0 6rem;
+    letter-spacing: 10px;
     animation: move-rtl 12000ms linear infinite;
     color: #e2e2cc;
 }
