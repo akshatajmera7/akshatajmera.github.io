@@ -6,6 +6,9 @@ import Lottie from "lottie-react";
 import animationData from "../assets/insta2.json";
 import animationData2 from "../assets/Linkedin.json";
 import animationData3 from "../assets/mail.json";
+import animationData4 from "../assets/top.json";
+import animationData5 from "../assets/star.json";
+import animationData6 from "../assets/rotate.json";
 import { useRef } from "react";
 
 export const About = () => {
@@ -37,10 +40,25 @@ export const About = () => {
   });
 
   return (
-    <div className="all">
+    <div className="all" id="all">
       <div className="brief">
         <div className="cursor"></div>
         <div className="portfolio">Portfolio</div>
+        <div className="bg">
+          <Lottie animationData={animationData6} />
+        </div>
+        <div className="bg">
+          <Lottie animationData={animationData6} />
+        </div>
+        <div className="bg">
+          <Lottie animationData={animationData6} />
+        </div>
+        <div className="bg">
+          <Lottie animationData={animationData6} />
+        </div>
+        <div className="bg">
+          <Lottie animationData={animationData6} />
+        </div>
         <div className="con">
           <div className="name">Akshat Ajmera</div>
           <div className="college">CSE UnderGrad at BITS PILANI</div>
@@ -50,7 +68,7 @@ export const About = () => {
           <div className="starbit">
             <div className="bit">A Bit About Me</div>
             <div className="star">
-              <img src="images/star1.png" class="starImage" alt="Star" />
+              <Lottie animationData={animationData5} />
             </div>
           </div>
         </div>
@@ -73,9 +91,6 @@ export const About = () => {
             me!
           </p>
         </div>
-        {/* <div className="hexcontainer">
-          <div className="hexagon"></div>
-        </div> */}
         <div className="text-wrapper">
           <h1>Akshat Ajmera</h1>
           <h1>Akshat Ajmera</h1>
@@ -157,30 +172,37 @@ export const About = () => {
           <h1>Akshat Ajmera</h1>
           <h1>Akshat Ajmera</h1>
         </div>
-        <div className="social">
-          <div className="insta">
-            <a href="https://instagram.com/akshatajmera07/" target="_blank">
-              {" "}
-              <Lottie
-                // onComplete={()=>{instaRef.current?.goToAndPlay(20, true)}}
-                // lottieRef={instaRef}
-                // loop={false}
-                animationData={animationData}
-              />
-            </a>
+        <div className="bottom">
+          <div className="social">
+            <div className="insta">
+              <a href="https://instagram.com/akshatajmera07/" target="_blank">
+                {" "}
+                <Lottie
+                  // onComplete={()=>{instaRef.current?.goToAndPlay(20, true)}}
+                  // lottieRef={instaRef}
+                  // loop={false}
+                  animationData={animationData}
+                />
+              </a>
+            </div>
+            <div className="mail">
+              <a href="mailto:akshatajmera777@gmail.com" target="_blank">
+                <Lottie animationData={animationData3} />
+              </a>
+            </div>
+            <div className="x"></div>
+            <div className="linkedin">
+              <a
+                href="https://www.linkedin.com/in/akshat-ajmera-b07459282/"
+                target="_blank"
+              >
+                <Lottie animationData={animationData2} />
+              </a>
+            </div>
           </div>
-          <div className="mail">
-            <a href="mailto:akshatajmera777@gmail.com" target="_blank">
-              <Lottie animationData={animationData3} />
-            </a>
-          </div>
-          <div className="x"></div>
-          <div className="linkedin">
-            <a
-              href="https://www.linkedin.com/in/akshat-ajmera-b07459282/"
-              target="_blank"
-            >
-              <Lottie animationData={animationData2} />
+          <div className="top">
+            <a href="#all">
+              <Lottie animationData={animationData4} />
             </a>
           </div>
         </div>
