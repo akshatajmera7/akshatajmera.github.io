@@ -368,4 +368,23 @@ h1{
     text-transform: uppercase;
     background-color: #e2e2cc;
 }
-
+.insta{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}   
+.linkedin{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.mail{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    
+}

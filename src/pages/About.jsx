@@ -2,12 +2,18 @@ import { NavBar } from "../components/navBar";
 import "./About.css";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Lottie from "lottie-react";
+import animationData from "../assets/insta2.json";
+import animationData2 from "../assets/Linkedin.json";
+import animationData3 from "../assets/mail.json";
+import { useRef } from "react";
 
 export const About = () => {
   const fadeInAimation = {
     initial: { opacity: 0, y: 100 },
     animate: { opacity: 1, y: 0, transition: { delay: 0.2 } },
   };
+  // const instaRef = useRef<LottieRefCurrentProps>(null);
   const [show, setShow] = useState(true);
   const [show1, setShow1] = useState(true);
   const [show2, setShow2] = useState(true);
@@ -150,6 +156,33 @@ export const About = () => {
           <h1>Akshat Ajmera</h1>
           <h1>Akshat Ajmera</h1>
           <h1>Akshat Ajmera</h1>
+        </div>
+        <div className="social">
+          <div className="insta">
+            <a href="https://instagram.com/akshatajmera07/" target="_blank">
+              {" "}
+              <Lottie
+                // onComplete={()=>{instaRef.current?.goToAndPlay(20, true)}}
+                // lottieRef={instaRef}
+                // loop={false}
+                animationData={animationData}
+              />
+            </a>
+          </div>
+          <div className="mail">
+            <a href="mailto:akshatajmera777@gmail.com" target="_blank">
+              <Lottie animationData={animationData3} />
+            </a>
+          </div>
+          <div className="x"></div>
+          <div className="linkedin">
+            <a
+              href="https://www.linkedin.com/in/akshat-ajmera-b07459282/"
+              target="_blank"
+            >
+              <Lottie animationData={animationData2} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
