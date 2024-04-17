@@ -12,12 +12,11 @@ font-family:Helvetica, Arial,  sans-serif;
 .name{
     color: #e2e2cc;
     display: flex;
-    font-size: 8rem;
+    font-size: 6rem;
     margin-top: 150px;
     text-transform: uppercase;
     padding-left: 12vw;
     padding-top: 5vw;
-    
 }
 .con{
     width: 84.5%;
@@ -28,12 +27,12 @@ font-family:Helvetica, Arial,  sans-serif;
     margin-top: 10vw;
     margin-bottom: 30vh;
 }
-.cursor{
+/* .cursor{
     width: 40px;
     height: 40px;
     border: 10px solid #4a24e2;
     border-radius: 50%;
-    position: absolute;
+    position:relative;
     transition-duration: 500ms;
     transition-timing-function: ease-out;
     animation: cursorAnim .5s infinite alternate;
@@ -85,7 +84,7 @@ font-family:Helvetica, Arial,  sans-serif;
         opacity: 0;
     }
     
-}
+} */
 .college{
     color: #4a24e2;
     font-size: 1.4rem;
@@ -340,6 +339,7 @@ h1{
     justify-content: center;
     text-transform: uppercase;
     background-color: #e2e2cc;
+    
 }
 .p5{
     width: 400px;
