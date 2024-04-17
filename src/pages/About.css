@@ -116,24 +116,11 @@ font-family:Helvetica, Arial,  sans-serif;
     margin-right: 15vw;
     margin-top: 30px;
 }
-/* .hexagon{
-    height: 0;
-    width: 150px;
-    border-top: 150px solid #4a24e2;
-    border-right: 100px solid transparent;
-    border-left: 100px solid transparent;
-
+.bg{
+    float: left;
+    width: 200px;
+    height: 200px;
 }
-.hexagon::before{
-    position: absolute;
-    content: '';
-    height: 0;
-    width: 150px;
-    border-bottom: 150px solid #4a24e2;
-    border-right: 100px solid transparent;
-    border-left: 100px solid transparent;
-    
-} */
 .bit{
     box-sizing:border-box ;
     width: fit-content;
@@ -156,28 +143,11 @@ font-family:Helvetica, Arial,  sans-serif;
     position: relative;
     margin-top: 2vh;
 }
-.starImage {
-    width: 1.5rem;
-    height: 1.5rem;
-    position: relative;
-    margin-right: 1rem;
-    position: absolute; top:8px; 
-    z-index: 1;
-    background-color: #17191a;
-    transform: translate(-50%,-50%);
-    animation: rotateconst 3s infinite linear;;
+.star{
+    width: 80px;
+    height: 80px;
 }
-@keyframes rotateconst {
-    0%{
-        transform: translate(-50%,-50%);
-        rotate: (0deg);
-    }
-    100%{
-        transform: translate(-50%,-50%)
-        rotate(360deg);
-    }
     
-}
 .text-wrapper{
     display: flex;
     justify-content: center;
@@ -387,4 +357,17 @@ h1{
     display: flex;
     flex-direction: row;
     
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.top{
+    width: 125px;
+    height: 125px;
+    padding: 2px;
+    float: right;
+    margin-left: 70vw;
 }
