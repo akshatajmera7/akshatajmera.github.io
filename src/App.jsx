@@ -3,13 +3,11 @@ import { Home } from "./pages/Home";
 import styles from "./app.module.css";
 
 function App() {
-
   return (
     <>
-      <div className={styles.app}>
+      <div>
         <Home />
       </div>
-      <div className="cursor"></div>
     </>
   );
 }
