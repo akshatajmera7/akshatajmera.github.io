@@ -1,6 +1,3 @@
-*{
-    font-family: cursive;
-}
 .dash{
     color: #f0f0e5;
     border: 5px solid #f0f0e5;
@@ -10,16 +7,9 @@
     position: sticky;
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
     font-family: cursive;
     margin-right: 20px;
     margin-top: 22.5px;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    border: 5px solid #17191a;
 }
 .dashboard{
     font-size: 1.5rem;   
@@ -30,25 +20,28 @@ li{
     padding-right: 10px;
     
 }
-.dashnames{
-    font-size: 1.5em;
-}
 .home{
     color: #f0f0e5;
+    font-size: 1.5rem;
+    
     &:hover{
         color: #d9f24f;
     }
 }
-/* .experience{color: #f0f0e5;
+.Achievements{color: #f0f0e5;
+    font-size: 1.5rem;
     &:hover{
     color: #d9f24f;
 }}
-.about{color: #f0f0e5;&:hover{
+.about{color: #f0f0e5;
+    font-size: 1.5rem;&:hover{
     color: #d9f24f;
 }}
-.contact{color: #f0f0e5;&:hover{
+.contact{color: #f0f0e5;
+    font-size: 1.5rem;&:hover{
     color: #d9f24f;
 }}
-.projects{color: #f0f0e5;&:hover{
+.projects{color: #f0f0e5;
+    font-size: 1.5rem;&:hover{
     color: #d9f24f;
-}} */
+}} 

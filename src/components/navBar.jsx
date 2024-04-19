@@ -2,31 +2,20 @@ import React from "react";
 import "./navBar.css";
 export const NavBar = () => {
   return (
+    // const [show, setShow] = useState(true);
     <div className="dash">
-      <button className="dashboard" onClick="s">
+      <button className="dashboard" >
         <div>
           <p>DASHBOARD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</p>
         </div>
       </button>
-      <ul>
-        <div className="dashnames">
-          <li className="dashitems">
-            <div className="#home"></div>Home
-          </li>
-          <li className="dashitems">
-            <div className="#about"></div>About
-          </li>
-          <li className="dashitems">
-            <div className="#experience"></div> Experience
-          </li>
-          <li className="dashitems">
-            <div className="#projects"></div> Projects
-          </li>
-          <li className="dashitems">
-            <div className="#contact"></div> Contact
-          </li>
-        </div>
-      </ul>
+      <div className="dashnames">
+        <div className="home">Home</div>
+        <div className="about">About</div>
+        <div className="Achievements">Achievements</div>
+        <div className="projects">Projects</div>
+        <div className="contact">Contact</div>
+      </div>
     </div>
   );
 };
