@@ -8,7 +8,15 @@ import animationData2 from "../assets/Linkedin.json";
 import animationData3 from "../assets/mail.json";
 import animationData4 from "../assets/top.json";
 import animationData5 from "../assets/star.json";
-import animationData6 from "../assets/rotate.json";
+import cubes1 from "../assets/cubes1.json";
+import cubes2 from "../assets/cubes2.json";
+import cubes3 from "../assets/cubes3.json";
+import cubes4 from "../assets/cubes4.json";
+import cubes5 from "../assets/cubes5.json";
+import cubes6 from "../assets/cubes6.json";
+import cubes7 from "../assets/cubes7.json";
+import cubes8 from "../assets/cubes8.json";
+
 import { useRef } from "react";
 
 export const About = () => {
@@ -44,24 +52,22 @@ export const About = () => {
       <div className="brief">
         <div className="cursor"></div>
         <div className="portfolio">Portfolio</div>
-        <div className="bg">
+        {/* <div className="bg">
           <Lottie animationData={animationData6} />
-        </div>
-        <div className="bg">
-          <Lottie animationData={animationData6} />
-        </div>
-        <div className="bg">
-          <Lottie animationData={animationData6} />
-        </div>
-        <div className="bg">
-          <Lottie animationData={animationData6} />
-        </div>
-        <div className="bg">
-          <Lottie animationData={animationData6} />
-        </div>
+        </div> */}
         <div className="con">
           <div className="name">Akshat Ajmera</div>
           <div className="college">CSE UnderGrad at BITS PILANI</div>
+          {/* <div className="cubes">
+            <Lottie animationData={cubes1} />
+            <Lottie animationData={cubes2} />
+            <Lottie animationData={cubes3} />
+            <Lottie animationData={cubes4} />
+            <Lottie animationData={cubes5} />
+            <Lottie animationData={cubes6} />
+            <Lottie animationData={cubes7} />
+            <Lottie animationData={cubes8} />
+          </div> */}
         </div>
 
         <div className="box">
@@ -72,25 +78,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <div className="intro">
-          I am an under-graduate student at the BITS Pilani Hyderabad. I am
-          currently persuing my B.E. Computer Science degree. I'm 18 year old
-          enthusiast who wants to learn new skills . Eager to embrace new skills
-          and experiences, I possess a vibrant curiosity that drives me to
-          explore various facets of life. With a mindset geared towards
-          continuous improvement, I approach challenges as opportunities for
-          growth and are unafraid to step out of their comfort zone.Life's a
-          playground, and I'm here to explore and learn as much as I can. Let's
-          see where this journey takes me!
-          <p>
-            Just stepping into the coding world, I'm a newbie excited about the
-            endless possibilities ahead. Embracing the learning curve, I'm
-            determined to grow gradually, turning each challenge into an
-            opportunity to enhance my coding skills. It's a journey of
-            discovery, and I can't wait to see where the lines of code will take
-            me!
-          </p>
-        </div>
+        <div className="intro"></div>
         <div className="text-wrapper">
           <h1>Akshat Ajmera</h1>
           <h1>Akshat Ajmera</h1>
@@ -188,6 +176,7 @@ export const About = () => {
             <div className="mail">
               <a href="mailto:akshatajmera777@gmail.com" target="_blank">
                 <Lottie animationData={animationData3} />
+                ..
               </a>
             </div>
             <div className="x"></div>

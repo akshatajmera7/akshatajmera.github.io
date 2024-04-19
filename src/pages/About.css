@@ -17,7 +17,9 @@ font-family:Helvetica, Arial,  sans-serif;
     text-transform: uppercase;
     padding-left: 12vw;
     padding-top: 5vw;
+    z-index: 1;
 }
+
 .con{
     width: 84.5%;
     display: flex;
@@ -189,19 +191,19 @@ h1{
 }
 .project1{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 20vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: absolute;
 } 
  .project2{
     text-align: right;
-    margin-left: 500px;
+    margin-left: 29vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: relative;
     margin-top: 250px; 
@@ -209,10 +211,10 @@ h1{
 } 
 .project3{
     text-align: right;
-    margin-left: 700px;
+    margin-left: 38vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: absolute;
     margin-top: 550px;
@@ -220,30 +222,30 @@ h1{
 }
 .project4{
     text-align: right;
-    margin-left: 900px;
+    margin-left: 46vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: absolute;
     margin-top: 850px;
 }
 .project5{
     text-align: right;
-    margin-left: 700px;
+    margin-left: 40vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: absolute;
     margin-top: 1150px;
 }
 .project6{
     text-align: right;
-    margin-left: 500px;
+    margin-left: 30vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: absolute;
     margin-top: 1450px;
@@ -251,10 +253,10 @@ h1{
 }
 .project7{
     text-align: right;
-    margin-left: 300px;
+    margin-left: 20vw;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: fit-content;
     position: absolute;
     margin-top: 1750px;
@@ -273,9 +275,10 @@ h1{
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    width: 100%;
 }
 .p1{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -284,7 +287,7 @@ h1{
     background-color:#e2e2cc;
 }
 .p2{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -293,7 +296,7 @@ h1{
     background-color: #4a24e2;
 }
 .p3{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -302,7 +305,7 @@ h1{
     background-color: #d9f24f;
 }
 .p4{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -312,7 +315,7 @@ h1{
     
 }
 .p5{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -321,7 +324,7 @@ h1{
     background-color: #4a24e2;
 }
 .p6{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -330,7 +333,7 @@ h1{
     background-color: #d9f24f;
 }
 .p7{
-    width: 400px;
+    width: 380px;
     height: 340px;
     display: flex;
     align-items: center;
@@ -370,4 +373,8 @@ h1{
     padding: 2px;
     float: right;
     margin-left: 70vw;
+}
+.wave{
+    display: flex;
+    flex-direction: row;
 }
