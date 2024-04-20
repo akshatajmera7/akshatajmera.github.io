@@ -18,6 +18,7 @@ import cubes7 from "../assets/cubes7.json";
 import cubes8 from "../assets/cubes8.json";
 
 import { useRef } from "react";
+import ParticleBackground from "./ParticleBackground";
 
 export const About = () => {
   const fadeInAimation = {
@@ -49,6 +50,7 @@ export const About = () => {
 
   return (
     <div className="all" id="all">
+      <ParticleBackground />
       <div className="brief">
         <div className="cursor"></div>
         <div className="portfolio">Portfolio</div>

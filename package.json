@@ -1,9 +1,8 @@
 {
-  "homepage": "https://akshatajmera7.github.io/PortfolioWebsite/",
+  "homepage": "https://akshatajmera7.github.io/",
   "name": "react-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://akshatajmera7.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,7 +16,8 @@
     "framer-motion": "^11.0.25",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-particles": "^2.12.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
