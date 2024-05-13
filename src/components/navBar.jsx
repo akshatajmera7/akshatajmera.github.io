@@ -4,7 +4,7 @@ export const NavBar = () => {
   return (
     // const [show, setShow] = useState(true);
     <div className="dash">
-      <button className="dashboard" >
+      <button className="dashboard">
         <div>
           <p>DASHBOARD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</p>
         </div>
@@ -14,7 +14,6 @@ export const NavBar = () => {
         <div className="about">About</div>
         <div className="Achievements">Achievements</div>
         <div className="projects">Projects</div>
-        <div className="contact">Contact</div>
       </div>
     </div>
   );

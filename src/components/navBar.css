@@ -23,6 +23,7 @@
 .home{
     color: #f0f0e5;
     font-size: 1.5rem;
+    margin: 10px;
     
     &:hover{
         color: #d9f24f;
@@ -30,18 +31,20 @@
 }
 .Achievements{color: #f0f0e5;
     font-size: 1.5rem;
+    margin: 10px;
+
     &:hover{
     color: #d9f24f;
 }}
 .about{color: #f0f0e5;
-    font-size: 1.5rem;&:hover{
-    color: #d9f24f;
-}}
-.contact{color: #f0f0e5;
+    margin: 10px;
+
     font-size: 1.5rem;&:hover{
     color: #d9f24f;
 }}
 .projects{color: #f0f0e5;
+    margin: 10px;
+
     font-size: 1.5rem;&:hover{
     color: #d9f24f;
 }} 
