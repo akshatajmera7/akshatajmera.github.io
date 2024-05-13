@@ -156,6 +156,25 @@ export const About = () => {
             </div>
           </motion.div>
         </div>
+        <br />
+        <div className="achievements">
+          <div className="ach">Some of my Achievements:</div>
+          <div className="jee">
+            <a className="font">JEE MAINS 99.81%tile</a>
+          </div>
+          <div className="kvpy">
+            <a className="font">KVPY SCHOLAR</a>
+          </div>
+          <div className="ntse">
+            <a className="font">NTSE QUALIFIED</a>
+          </div>
+          <div className="imo">
+            <a className="font">IMO INT. RANK 2</a>
+          </div>
+          <div className="nso">
+            <a className="font">NSO INT. RANK 14</a>
+          </div>
+        </div>
         <div className="text-wrapper2">
           <h1>Akshat Ajmera</h1>
           <h1>Akshat Ajmera</h1>
